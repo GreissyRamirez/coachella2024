@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: black;
+  }
+  
+  header {
+    text-align: center;
+  }
+  .bg{
+    background: url(fondo.jpeg);
+    background-size: cover;
+    height: 770px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-right: 20px;
+  }
+
+  nav ul li{
+    position: relative;
+    font-weight: bold;
+  }
+
+  nav ul li input {
+    display: none;
+    visibility: hidden;
+    position: absolute;
+    left: -9999px;
+  }
+
+  .submenu {
+    display: none;
+    position: absolute;
+    background-color: #fec381;
+    margin-top: 10px;
+    border-radius: 5px;
+    padding: 10px 0;
+    width: 220px;
+    text-align: left;
+  }
+  
+  /* Submenú activo cuando el checkbox está seleccionado */
+  li input[type="checkbox"]:checked + label + .submenu {
+    display: block;
+  }
+  
+  .submenu li {
+    padding: 5px 15px;
+  }
+  
+  .submenu li a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  /* Icono de menú hamburguesa para dispositivos móviles */
+  .menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  nav img{
+    width: 200px;
+    margin-left: 20px
+  }
+  .intro {
+    text-align: center;
+    padding: 40px;
+    margin: 70px;
+    margin-bottom: 200px;
+    gap: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .intro h2 {
+    font-size: 48px;
+    max-width: 50%;
+  }
+  
+  .dates h3 {
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .dates p {
+    font-size: 1.2em;
+    text-align: center;
+  }
+  
+  .buy-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #c682e5;
+    color: black;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+  
+  .super-packs {
+    background-color: #78b75c;
+    padding: 20px 20px;
+  }
+  
+  .super-packs h2 {
+    text-align: center;
+    font-size: 1.8em;
+    color: #ddffab;
+    padding: 20px;
+  }
+  
+  .packs {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+  }
+  
+  .pack1 {
+    background-color: #fba0cc;
+    padding: 20px;
+    margin-right: 30px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .pack2 {
+    background-color: #d287e4;
+    padding: 20px;
+    margin-right: 30px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .pack3 {
+    background-color: #fab6a1;
+    padding: 20px;
+    margin-right: 30px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .pack4 {
+    background-color: #fec381;
+    padding: 20px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .pack1, .pack2, .pack3, .pack4, h3{
+    text-align: start;
+  }
+
+  .pack1, .pack2, .pack3, .pack4, p{
+    font-weight: lighter;
+    margin-bottom: 10px;
+    text-align: start;
+  }
+
+  .pack1, .pack2, .pack3, .pack4, a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .news {
+    background-color: #78b75c;
+    padding: 20px 20px;
+  }
+  
+  .news h2 {
+    text-align: center;
+    font-size: 1.8em;
+    color: #ddffab;
+    padding: 20px;
+  }
+  
+  .news-cards {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .card1 {
+    background-color: #fba0cc;
+    padding: 20px;
+    margin-right: 30px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+  }
+  .card2 {
+    background-color: #d287e4;
+    padding: 20px;
+    margin-right: 30px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+  }
+  .card3 {
+    background-color: #fab6a1;
+    padding: 20px;
+    margin-right: 30px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+  }
+  .card4 {
+    background-color: #fec381;
+    padding: 20px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .news-cards p {
+    text-align: center;
+    margin: 0px;
+  }
+  
+  footer {
+    background-color: #78b75c;
+    color: black;
+    padding: 20px 0;
+  }
+  .footer-bar{
+    height: 4px;
+    width: 100%;
+    background-color: #ddffab;
+  }
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  .logo img{
+    width: 200px;
+  }
+  .social a, .links a {
+    color: black;
+    text-decoration: none;
+    text-align: start;
+    font-size: 13px;
+    font-weight: normal;
+    margin-bottom: 8px;
+  }
+  .social{
+    display: flex;
+    justify-content: center;
+  }
+  .social img{
+    width: 40px;
+    margin: 13px;
+  }
+  .links{
+    display: flex;
+    margin-top: 10px;
+  }
+  .links h3{
+    margin-top: 10px;
+    margin-bottom: 8px;
+  }
+  .links1, .links2, .links3, .links4{
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+  }
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+nav ul {
+  display: flex;
+}
+
+/* tablet */
+@media (max-width: 900px) {
+  .menu-icon {
+      display: block;
+      margin-right: 20px;
+  }
+
+  nav ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      left: 0;
+      gap: 10px;
+      background-color: #fec381;
+      width: 100%;
+      padding: 0;
+  }
+
+  nav ul li {
+      padding: 15px;
+      text-align: center;
+      border-top: 1px solid #ddd;
+  }
+
+  #menu-toggle:checked + .menu-icon + ul {
+      display: flex;
+  }
+
+  .submenu {
+    position: static;
+    width: auto;
+    text-align: center;
+  }
+
+  .intro h2 {
+      font-size: 30px;
+      max-width: 100%;
+  }
+  
+  .intro h3 {
+      font-size: 36px;
+      width: 200px;
+  }
+  
+  .intro p {
+      font-size: 16px;
+  }
+
+  .buy-button {
+      font-size: 14px;
+      padding: 8px 16px;
+  }
+
+  .packs, .news-cards {
+      flex-wrap: wrap;
+      gap: 10px;
+  }
+
+  .pack1, .pack2, .pack3, .pack4, .card1, .card2, .card3, .card4 {
+      margin-right: 0px;
+  }
+
+  .footer-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .footer-content .links {
+      flex-direction: row;
+      justify-content: center;
+  }
+}
+
+/* celulares */
+@media (max-width: 600px) {
+  .intro {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 20px;
+  }
+
+  .intro h2 {
+      font-size: 20px;
+      margin-bottom: 15px;
+  }
+
+  .intro h3 {
+      font-size: 18px;
+      margin-bottom: 15px;
+  }
+
+  .intro p {
+      font-size: 14px;
+  }
+
+  .buy-button {
+      font-size: 12px;
+      padding: 6px 12px;
+  }
+
+  .packs, .news-cards {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .pack1, .pack2, .pack3, .pack4, .card1, .card2, .card3, .card4 {
+      width: 100%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-content .links {
+    flex-direction: column;
+    justify-content: center;
+}
+}
